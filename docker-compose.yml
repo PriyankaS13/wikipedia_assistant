@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+  wikiDB:
+    image: mysql:8.0.19
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    hostname: wikiDB
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql123
+
+  wiki_app:
+    depends_on:
+      - wikiDB
+    links:
+      - wikiDB
+    hostname: wikiapp
+    build: wiki/.
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: 'mysql+pymysql://root:mysql123@wikiDB/wikipedia'
+volumes:
+    db_data: {}

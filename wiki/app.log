@@ -1,0 +1,27 @@
+checking for sql injection in raw query
+serializing raw sql query output
+serializing raw sql query output
+checking for sql injection in raw query
+sql injection detected sending error response
+checking for sql injection in raw query
+Error executing sql query (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from category' at line 1")
+[SQL: select from category]
+(Background on this error at: http://sqlalche.me/e/f405)
+checking for sql injection in raw query
+Error executing sql query (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from category' at line 1")
+[SQL: select from category]
+(Background on this error at: http://sqlalche.me/e/f405)
+checking for sql injection in raw query
+sql injection detected sending error response
+checking for sql injection in raw query
+serializing raw sql query output
+serializing raw sql query output
+checking for sql injection in raw query
+Error executing sql query (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from category' at line 1")
+[SQL: select from category]
+(Background on this error at: http://sqlalche.me/e/f405)
+checking for sql injection in raw query
+sql injection detected sending error response
+checking for sql injection in raw query
+serializing raw sql query output
+serializing raw sql query output
